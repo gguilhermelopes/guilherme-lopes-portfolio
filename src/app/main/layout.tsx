@@ -1,11 +1,12 @@
+import Header from "@/components/header";
 import React from "react";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
-      <h1>Main Layout</h1>
+    <div className="p-16">
+      <Header />
       <div>{children}</div>
-    </>
+    </div>
   );
 };
 

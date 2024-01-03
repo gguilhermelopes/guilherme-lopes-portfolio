@@ -15,6 +15,14 @@ const config: Config = {
         background100: "#202020",
         background200: "#272727",
       },
+      keyframes: {
+        leftToFull: {
+          to: { width: "100%" },
+        },
+      },
+      animation: {
+        "left-to-full": "leftToFull .3s forwards",
+      },
     },
   },
   plugins: [],
