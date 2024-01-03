@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="flex gap-10">
       {navContent.map((item) => (
         <Link
-          className="font-semibold transition-all hover:text-primary100 "
+          className="font-semibold transition-all hover:text-primary100"
           key={item.label}
           href={item.href}
         >
