@@ -19,9 +19,13 @@ const config: Config = {
         leftToFull: {
           to: { width: "100%" },
         },
+        opacityToFull: {
+          to: { opacity: "1" },
+        },
       },
       animation: {
         "left-to-full": "leftToFull .3s forwards",
+        "opacity-to-full": "opacityToFull .3s forwards",
       },
     },
   },
