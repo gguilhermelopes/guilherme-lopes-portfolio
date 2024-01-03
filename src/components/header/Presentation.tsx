@@ -1,5 +1,3 @@
-import React from "react";
-
 const Presentation = () => {
   return (
     <div className="max-w-[380px] text-right">
