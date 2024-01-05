@@ -5,7 +5,7 @@ import MainFooter from "./MainFooter";
 const MainPage = () => {
   return (
     <>
-      <main>
+      <main className="mt-16">
         <Hello />
         <Title />
       </main>

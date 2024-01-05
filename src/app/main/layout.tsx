@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import React from "react";
 
@@ -6,6 +7,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="p-8 lg:p-12">
       <Header />
       <div>{children}</div>
+      <Footer />
     </div>
   );
 };

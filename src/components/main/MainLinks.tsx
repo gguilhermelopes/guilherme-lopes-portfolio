@@ -20,8 +20,8 @@ const linksContent = [
 
 const MainLinks = () => {
   return (
-    <nav className="flex-1 self-center flex items-center justify-center">
-      <ul className="flex flex-col gap-3 text-[1.125rem]">
+    <nav>
+      <ul className="flex flex-col gap-2 lg:gap-1 text-[.875rem] sm:text-[1.125rem]">
         {linksContent.map((item) => (
           <li
             key={item.label}

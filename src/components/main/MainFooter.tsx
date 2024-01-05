@@ -15,12 +15,13 @@ const footerLinks = [
 
 const MainFooter = () => {
   return (
-    <div className="flex justify-center items-center gap-4 mt-24">
+    <div className="flex justify-center items-center gap-4 mt-12 sm:mt-24">
       {footerLinks.map((link) => (
         <Link
           className="hover:scale-105 transition-all"
           key={link.href}
           href={link.href}
+          target="_blank"
         >
           {link.icon}
         </Link>
