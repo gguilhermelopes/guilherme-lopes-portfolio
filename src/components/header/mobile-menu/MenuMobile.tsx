@@ -18,7 +18,7 @@ const MenuMobile = ({ setIsMenuMobileOpened }: MenuMobileProps) => {
 
   return (
     <div
-      className="absolute left-0 top-0 w-full h-screen p-8 lg:hidden backdrop-blur-[2px]"
+      className="fixed left-0 top-0 w-full h-full p-8 lg:hidden backdrop-blur-[2px]"
       onMouseDown={handleOutsideMouseDown}
     >
       <nav className="mt-10 p-6 bg-background200 opacity-0 w-[200px] animate-opacity-to-full">

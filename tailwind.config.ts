@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        monospace: ['"IBM Plex Mono"', "ui-monospace"],
+      },
       colors: {
         primary100: "#FEDA4E",
         primary200: "#FBE02A",

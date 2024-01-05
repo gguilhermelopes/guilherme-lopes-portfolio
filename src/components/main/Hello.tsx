@@ -1,8 +1,10 @@
+import TextDetails from "../UI/TextDetails";
+
 const Hello = () => {
   return (
-    <span className="text-xs font-semibold">
-      <span className="text-primary100">&lt;</span>hello, world!
-      <span className="text-primary100">&gt;</span>
+    <span className="text-sm font-monospace">
+      <TextDetails>&lt;</TextDetails>hello, world!
+      <TextDetails>&gt;</TextDetails>
     </span>
   );
 };
