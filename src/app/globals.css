@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  background: url("/bg.jpg");
-  background-size: cover;
+  background: url("/bg.jpg") repeat-y;
+  background-size: contain;
   color: #fff;
 }

@@ -1,6 +1,5 @@
 import Hello from "./Hello";
 import Title from "./Title";
-import MainFooter from "./MainFooter";
 
 const MainPage = () => {
   return (
@@ -9,7 +8,6 @@ const MainPage = () => {
         <Hello />
         <Title />
       </main>
-      <MainFooter />
     </>
   );
 };
