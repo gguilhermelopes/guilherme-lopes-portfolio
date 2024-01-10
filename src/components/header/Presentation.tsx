@@ -1,4 +1,5 @@
 import TextDetails from "@/components/UI/TextDetails";
+import AnimateLeftIn from "../UI/AnimateLeftIn";
 
 const Presentation = () => {
   return (

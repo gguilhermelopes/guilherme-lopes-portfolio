@@ -6,8 +6,8 @@ const AboutPresentation = () => {
       <h1 className="font-bold text-lg sm:text-4xl">
         Olá! Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
       </h1>
-      <div className="flex flex-col mt-2 md:mt-4 text-xs sm:text-base md:text-lg text-justify">
-        <p className="md:max-w-[45%] first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace">
+      <div className="flex flex-col gap-2 mt-2 md:mt-4 text-xs sm:text-base md:text-lg">
+        <p className="md:max-w-[47.5%] max-w-[95%] md:text-justify first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace">
           Sou um <TextDetails>desenvolvedor</TextDetails> graduado em Engenharia
           Eletrônica e com experiência em projetos de desenvolvimento. Altamente
           dedicado à criação de soluções eficientes e escaláveis, bem como
@@ -20,7 +20,7 @@ const AboutPresentation = () => {
           possuo habilidades práticas no consumo e criação de{" "}
           <TextDetails>REST APIs</TextDetails>.
         </p>
-        <p className="md:max-w-[45%] first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace self-end">
+        <p className="md:max-w-[47.5%] max-w-[95%] md:text-justify first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace md:self-end">
           Minha jornada na programação começou há quase{" "}
           <TextDetails>dois anos</TextDetails>, quando decidi me aprofundar em{" "}
           <TextDetails>JavaScript</TextDetails>. Desde então, houve uma grande{" "}

@@ -25,10 +25,14 @@ const config: Config = {
         opacityToFull: {
           to: { opacity: "1" },
         },
+        opacityIn: {
+          to: { opacity: "initial", transform: "initial" },
+        },
       },
       animation: {
         "left-to-full": "leftToFull .3s forwards",
         "opacity-to-full": "opacityToFull .3s forwards",
+        "opacity-in": "opacityIn .75s forwards",
       },
     },
   },
