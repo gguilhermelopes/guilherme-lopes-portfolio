@@ -14,7 +14,7 @@ const config: Config = {
       colors: {
         primary100: "#FEDA4E",
         primary200: "#FBE02A",
-        primary300: "#AD7D00",
+        primary300: "#fee78d",
         background100: "#202020",
         background200: "#272727",
       },

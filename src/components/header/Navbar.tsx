@@ -45,7 +45,8 @@ const Navbar = () => {
               href={item.href}
             >
               {item.label}
-              {item.href === pathname && (
+              {(item.href === pathname ||
+                (pathname.startsWith(item.href) && item.href !== "/main")) && (
                 <span
                   className="mt-1 w-0 h-[2px] block bg-primary100 animate-left-to-full"
                   aria-hidden

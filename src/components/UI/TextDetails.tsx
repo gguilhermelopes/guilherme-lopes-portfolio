@@ -1,7 +1,11 @@
-import { ReactNode } from "react";
+import { ComponentProps } from "react";
 
-const TextDetails = ({ children }: { children: ReactNode }) => {
-  return <span className="text-primary100">{children}</span>;
+const TextDetails = ({ children, ...props }: ComponentProps<"span">) => {
+  return (
+    <span {...props} className="text-primary100">
+      {children}
+    </span>
+  );
 };
 
 export default TextDetails;
