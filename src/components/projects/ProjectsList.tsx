@@ -1,34 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import prismadb from "../../../lib/prismadb";
 
-const projects = [
-  {
-    title: "FlowAds",
-    shortDescription:
-      "Aplicativo Web de automatização de conversas, integrado ao Whatsapp",
-    imgURL: "/projects/flowads.png",
-    id: "1",
-    stack: [
-      "TypeScript",
-      "Next",
-      "MySQL",
-      "PostgreSQL",
-      "Prisma",
-      "CSS",
-      "Linux",
-    ],
-  },
-  {
-    title: "Petx",
-    shortDescription:
-      "SASS para gerenciamento completo de uma clínica veterinária",
-    imgURL: "/projects/petx.png",
-    id: "2",
-    stack: ["Java", "Spring Boot", "PostgreSQL", "Prisma", "Tailwind", "React"],
-  },
-];
+const fetchProjects = async () => {
+  const projects = await prismadb.project.findMany({
+    orderBy: { id: "desc" },
+  });
+  return projects;
+};
 
-const ProjectsList = () => {
+const ProjectsList = async () => {
+  const projects = await fetchProjects();
   return (
     <ul className="flex gap-8 text-black mt-8">
       {projects.map((project) => (
