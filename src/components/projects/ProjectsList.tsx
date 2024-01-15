@@ -4,7 +4,7 @@ import prismadb from "../../../lib/prismadb";
 
 const fetchProjects = async () => {
   const projects = await prismadb.project.findMany({
-    orderBy: { id: "desc" },
+    orderBy: { createdAt: "asc" },
   });
   return projects;
 };
@@ -24,7 +24,7 @@ const ProjectsList = async () => {
             <Image
               className="rounded-md"
               alt={`Imagem do ${project.title}`}
-              src={project.imgURL}
+              src={`/projects/${project.imgURL}`}
               width={325}
               height={325}
               priority

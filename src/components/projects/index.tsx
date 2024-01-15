@@ -1,6 +1,4 @@
-import Image from "next/image";
 import AnimateLeftIn from "../UI/AnimateLeftIn";
-import Link from "next/link";
 import ProjectsTitle from "./ProjectsTitle";
 import ProjectsList from "./ProjectsList";
 
