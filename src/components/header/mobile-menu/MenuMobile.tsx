@@ -7,18 +7,25 @@ import { usePathname } from "next/navigation";
 
 type MenuMobileProps = {
   setIsMenuMobileOpened: Dispatch<SetStateAction<boolean>>;
+  toggleBodyScroll: (shouldEnableScroll: boolean) => void;
 };
 
-const MenuMobile = ({ setIsMenuMobileOpened }: MenuMobileProps) => {
+const MenuMobile = ({
+  setIsMenuMobileOpened,
+  toggleBodyScroll,
+}: MenuMobileProps) => {
   const pathname = usePathname();
 
   const handleOutsideMouseDown = (event: MouseEvent<HTMLDivElement>) => {
-    if (event.target === event.currentTarget) setIsMenuMobileOpened(false);
+    if (event.target === event.currentTarget) {
+      setIsMenuMobileOpened(false);
+      toggleBodyScroll(true);
+    }
   };
 
   return (
     <div
-      className="fixed left-0 top-0 w-full h-full p-8 lg:hidden backdrop-blur-[2px]"
+      className="fixed left-0 top-0 w-screen h-screen p-8 lg:hidden backdrop-blur-[2px]"
       onMouseDown={handleOutsideMouseDown}
     >
       <nav className="mt-10 p-6 bg-background200 opacity-0 w-[200px] animate-opacity-to-full">

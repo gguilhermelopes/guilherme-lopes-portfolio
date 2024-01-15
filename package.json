@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.8.0",
+    "embla-carousel-react": "^8.0.0-rc19",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

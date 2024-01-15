@@ -30,11 +30,22 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsMenuMobileOpened(false);
+    toggleBodyScroll(true);
   }, [pathname]);
 
-  const handleMenuToggleClick = () => {
-    setIsMenuMobileOpened((prevState) => !prevState);
+  const toggleBodyScroll = (shouldEnableScroll: boolean) => {
+    if (shouldEnableScroll) {
+      document.body.classList.remove("no-scroll");
+    } else {
+      document.body.classList.add("no-scroll");
+    }
   };
+
+  const handleMenuToggleClick = () => {
+    setIsMenuMobileOpened(true);
+    toggleBodyScroll(false);
+  };
+
   return (
     <nav>
       <ul className="hidden lg:flex gap-10">
@@ -61,7 +72,10 @@ const Navbar = () => {
           <MenuIcon />
         </button>
         {isMenuMobileOpened && (
-          <MenuMobile setIsMenuMobileOpened={setIsMenuMobileOpened} />
+          <MenuMobile
+            setIsMenuMobileOpened={setIsMenuMobileOpened}
+            toggleBodyScroll={toggleBodyScroll}
+          />
         )}
       </>
     </nav>
