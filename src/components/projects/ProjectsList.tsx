@@ -12,15 +12,15 @@ const fetchProjects = async () => {
 const ProjectsList = async () => {
   const projects = await fetchProjects();
   return (
-    <ul className="flex flex-col sm:flex-row gap-8 text-black mt-8">
+    <ul className="flex flex-col sm:flex-row gap-8 text-black mt-4 sm:mt-8">
       {projects.map((project) => (
         <li key={project.title}>
           <Link
             title="Clique no projeto para descobrir mais"
-            className="flex flex-col flex-1 gap-4 max-w-[325px] bg-primary100 rounded-lg p-4 transition-all hover:scale-[1.015]"
+            className="flex flex-col gap-2 sm:gap-4 max-w-[325px] bg-primary100 rounded-lg p-4 transition-all hover:scale-[1.015]"
             href={`/main/projects/${project.id}`}
           >
-            <h2 className="font-bold text-xl">{project.title}</h2>
+            <h2 className="font-bold text-lg sm:text-xl">{project.title}</h2>
             <Image
               className="rounded-md"
               alt={`Imagem do ${project.title}`}
@@ -29,7 +29,7 @@ const ProjectsList = async () => {
               height={325}
               priority
             />
-            <p className="text-sm leading-4 font-semibold self-center text-center max-w-[25ch]">
+            <p className="text-xs sm:text-sm leading-3 sm:leading-4 font-semibold self-center text-center max-w-[25ch]">
               {project.shortDescription}
             </p>
             <ul className="flex flex-wrap gap-2 self-end">

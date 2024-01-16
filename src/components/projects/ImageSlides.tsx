@@ -6,11 +6,11 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import DotButton from "./DotButton";
 
-type ImageSildesProps = {
+type ImageSlidesProps = {
   imageUrls: string[];
 };
 
-const ImageSildes = ({ imageUrls }: ImageSildesProps) => {
+const ImageSlides = ({ imageUrls }: ImageSlidesProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "center",
   });
@@ -41,9 +41,9 @@ const ImageSildes = ({ imageUrls }: ImageSildesProps) => {
   }, [emblaApi, onInit, onSelect]);
 
   return (
-    <>
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container flex gap-4">
+    <div>
+      <div className="embla mt-8" ref={emblaRef}>
+        <div className="embla__container flex gap-8">
           {imageUrls?.map((url) => (
             <div className="embla__slide" key={url}>
               <Image
@@ -68,8 +68,8 @@ const ImageSildes = ({ imageUrls }: ImageSildesProps) => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default ImageSildes;
+export default ImageSlides;
