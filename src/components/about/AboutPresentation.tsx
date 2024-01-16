@@ -6,7 +6,7 @@ const AboutPresentation = () => {
       <h1 className="font-bold text-lg sm:text-5xl">
         Olá! Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
       </h1>
-      <div className="flex gap-8 mt-2 md:mt-6 text-xs sm:text-base md:text-lg">
+      <div className="flex flex-col md:flex-row gap-1 md:gap-8 mt-2 md:mt-6 text-xs sm:text-base md:text-lg">
         <p className="max-w-[95%] md:max-w-[75%] first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace">
           Sou um <TextDetails>desenvolvedor</TextDetails> graduado em Engenharia
           Eletrônica e com experiência em projetos de desenvolvimento. Altamente

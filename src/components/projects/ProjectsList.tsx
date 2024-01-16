@@ -12,7 +12,7 @@ const fetchProjects = async () => {
 const ProjectsList = async () => {
   const projects = await fetchProjects();
   return (
-    <ul className="flex gap-8 text-black mt-8">
+    <ul className="flex flex-col sm:flex-row gap-8 text-black mt-8">
       {projects.map((project) => (
         <li key={project.title}>
           <Link
