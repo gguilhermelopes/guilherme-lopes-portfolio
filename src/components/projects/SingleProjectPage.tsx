@@ -15,7 +15,7 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
     <AnimateLeftIn>
       <main className="mt-16">
         <div className="flex flex-col gap-4">
-          <h1 className="text-[1.375rem] sm:text-[1.75rem] font-bold">
+          <h1 className="text-[1.375rem] sm:text-[1.75rem] font-bold text-primary100">
             {project.title}
           </h1>
           <p className="text-xs sm:text-base leading-4 sm:leading-normal">
