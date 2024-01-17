@@ -1,7 +1,9 @@
+import { IoAlertCircleOutline, IoLockClosedOutline } from "react-icons/io5";
 import prismadb from "../../../lib/prismadb";
 import AnimateLeftIn from "../UI/AnimateLeftIn";
 import GetBackButton from "./GetBackButton";
 import ImageSlides from "./ImageSlides";
+import Link from "next/link";
 
 const fetchProject = async (id: string) => {
   return await prismadb.project.findUnique({ where: { id } });
@@ -31,6 +33,48 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
               </li>
             ))}
           </ul>
+          <div className="mt-2 sm:mt-4 text-sm md:text-base flex flex-col gap-2">
+            <div className="font-bold">
+              Deploy
+              {project.deployURL ? (
+                <div>
+                  <Link
+                    target="_blank"
+                    className="font-medium text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
+                    href={project.deployURL}
+                  >
+                    {project.title}
+                  </Link>
+                </div>
+              ) : (
+                <span className="flex items-center gap-2 font-medium">
+                  Projeto em andamento
+                  <IoAlertCircleOutline color="#FEDA4E" />
+                </span>
+              )}
+            </div>
+            <div className="font-bold">
+              Repositório{project.repositories.length > 1 && "s"}
+              {project.repositories.length > 0 ? (
+                project.repositories.map((repository) => (
+                  <p key={repository}>
+                    <Link
+                      target="_blank"
+                      className="font-medium text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
+                      href={repository}
+                    >
+                      {repository.replace("https://", "")}
+                    </Link>
+                  </p>
+                ))
+              ) : (
+                <span className="flex items-center gap-2 font-medium">
+                  Repositório privado
+                  <IoLockClosedOutline color="#FEDA4E" />
+                </span>
+              )}
+            </div>
+          </div>
         </div>
         <ImageSlides imageUrls={project?.imgGalleryURLs} />
         <GetBackButton />
