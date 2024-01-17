@@ -5,7 +5,7 @@ import Title from "./Title";
 const MainPage = () => {
   return (
     <AnimateLeftIn>
-      <main className="mt-16">
+      <main className="mt-8">
         <Hello />
         <Title />
       </main>

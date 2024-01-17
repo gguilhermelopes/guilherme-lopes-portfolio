@@ -2,12 +2,12 @@ import TextDetails from "../UI/TextDetails";
 
 const AboutPresentation = () => {
   return (
-    <div>
-      <h1 className="font-bold text-lg sm:text-5xl">
+    <>
+      <h1 className="font-bold text-lg sm:text-3xl md:text-4xl">
         Olá! Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
       </h1>
-      <div className="flex flex-col md:flex-row gap-1 md:gap-8 mt-2 md:mt-6 text-xs sm:text-base md:text-lg">
-        <p className="max-w-[95%] md:max-w-[75%] first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace">
+      <div className="sm:grid sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6">
+        <p className="max-w-[95%] self-center text-xs sm:text-sm md:text-base lg:text-lg">
           Sou um <TextDetails>desenvolvedor</TextDetails> graduado em Engenharia
           Eletrônica e com experiência em projetos de desenvolvimento. Altamente
           dedicado à criação de soluções eficientes e escaláveis, bem como
@@ -16,26 +16,30 @@ const AboutPresentation = () => {
           <TextDetails>JavaScript</TextDetails>,{" "}
           <TextDetails>TypeScript</TextDetails>,{" "}
           <TextDetails>React</TextDetails>, <TextDetails>Next</TextDetails>,{" "}
-          <TextDetails>CSS</TextDetails>, <TextDetails>Tailwind</TextDetails> e
-          possuo habilidades práticas no consumo e criação de{" "}
+          <TextDetails>CSS</TextDetails>, <TextDetails>Tailwind</TextDetails>{" "}
+          epossuo habilidades práticas no consumo e criação de{" "}
           <TextDetails>REST APIs</TextDetails>.
+          <span className="mt-1 block">
+            Minha jornada na programação começou há quase{" "}
+            <TextDetails>dois anos</TextDetails>, quando decidi me aprofundar em{" "}
+            <TextDetails>JavaScript</TextDetails>. Desde então, houve uma grande{" "}
+            <TextDetails>evolução</TextDetails>, muito devido ao meu{" "}
+            <TextDetails>comprometimento</TextDetails> e{" "}
+            <TextDetails>facilidade de aprendizado</TextDetails>. Realizei{" "}
+            <TextDetails>cursos</TextDetails>, desenvolvi projetos de forma{" "}
+            <TextDetails>independente</TextDetails>, atuei como desenvolvedor{" "}
+            <TextDetails>voluntário</TextDetails> e também como{" "}
+            <TextDetails>freelancer</TextDetails>, tudo com o objetivo de me{" "}
+            <TextDetails>capacitar</TextDetails> cada vez mais e entender os
+            processos deste mundo profissional.
+          </span>
         </p>
-        <p className="max-w-[95%] md:max-w-[75%] first-letter:text-xl sm:first-letter:text-4xl md:first-letter:text-5xl first-letter:font-monospace">
-          Minha jornada na programação começou há quase{" "}
-          <TextDetails>dois anos</TextDetails>, quando decidi me aprofundar em{" "}
-          <TextDetails>JavaScript</TextDetails>. Desde então, houve uma grande{" "}
-          <TextDetails>evolução</TextDetails>, muito devido ao meu{" "}
-          <TextDetails>comprometimento</TextDetails> e{" "}
-          <TextDetails>facilidade de aprendizado</TextDetails>. Realizei{" "}
-          <TextDetails>cursos</TextDetails>, desenvolvi projetos de forma{" "}
-          <TextDetails>independente</TextDetails>, atuei como desenvolvedor{" "}
-          <TextDetails>voluntário</TextDetails> e também como{" "}
-          <TextDetails>freelancer</TextDetails>, tudo com o objetivo de me{" "}
-          <TextDetails>capacitar</TextDetails> cada vez mais e entender os
-          processos deste mundo profissional.
-        </p>
+        <h2 className="uppercase font-bold hidden sm:block sm:text-6xl md:text-7xl text-white/30 text-right place-self-center">
+          Quem <br /> sou <br />
+          eu?
+        </h2>
       </div>
-    </div>
+    </>
   );
 };
 
