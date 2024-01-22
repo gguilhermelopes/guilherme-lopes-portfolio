@@ -4,7 +4,7 @@ const AboutPresentation = () => {
   return (
     <>
       <h1 className="font-bold text-lg sm:text-3xl md:text-4xl">
-        Olá! Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
+        Olá! Me chamo <TextDetails>Guilherme Lopes</TextDetails>. 👋
       </h1>
       <div className="sm:grid sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6">
         <p className="max-w-[95%] self-center text-xs sm:text-sm md:text-base lg:text-lg">

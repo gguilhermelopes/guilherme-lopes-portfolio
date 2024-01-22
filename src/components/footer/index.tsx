@@ -15,7 +15,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <div className="flex flex-1 justify-center items-end gap-4 mt-12 sm:mt-24">
+    <footer className="flex flex-1 justify-center items-end gap-4 mt-12 sm:mt-24">
       {footerLinks.map((link) => (
         <Link
           className="hover:scale-105 transition-all"
@@ -26,7 +26,7 @@ const Footer = () => {
           {link.icon}
         </Link>
       ))}
-    </div>
+    </footer>
   );
 };
 
