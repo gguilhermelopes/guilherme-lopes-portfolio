@@ -23,10 +23,7 @@ const MainLinks = () => {
     <nav>
       <ul className="flex flex-col gap-2 lg:gap-1 text-[.875rem] sm:text-[1.125rem]">
         {linksContent.map((item) => (
-          <li
-            key={item.label}
-            className="font-semibold flex items-center gap-2"
-          >
+          <li key={item.label} className="font-bold flex items-center gap-2">
             {item.label}{" "}
             <Link
               className="bg-transparent font-normal px-1 text-primary100 font-monospace rounded-sm hover:bg-primary100 hover:text-black transition-all"

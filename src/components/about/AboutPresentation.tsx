@@ -16,8 +16,8 @@ const AboutPresentation = () => {
           <TextDetails>JavaScript</TextDetails>,{" "}
           <TextDetails>TypeScript</TextDetails>,{" "}
           <TextDetails>React</TextDetails>, <TextDetails>Next</TextDetails>,{" "}
-          <TextDetails>CSS</TextDetails>, <TextDetails>Tailwind</TextDetails>{" "}
-          epossuo habilidades práticas no consumo e criação de{" "}
+          <TextDetails>CSS</TextDetails>, <TextDetails>Tailwind</TextDetails> e
+          possuo habilidades práticas no consumo e criação de{" "}
           <TextDetails>REST APIs</TextDetails>.
           <span className="mt-1 block">
             Minha jornada na programação começou há quase{" "}
@@ -34,7 +34,7 @@ const AboutPresentation = () => {
             processos deste mundo profissional.
           </span>
         </p>
-        <h2 className="uppercase font-bold hidden sm:block sm:text-6xl md:text-7xl text-white/30 text-right place-self-center">
+        <h2 className="uppercase font-extrabold hidden sm:block sm:text-6xl md:text-7xl text-white/30 text-right place-self-center">
           Quem <br /> sou <br />
           eu?
         </h2>

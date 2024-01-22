@@ -36,16 +36,18 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
           <div className="mt-2 sm:mt-4 text-sm md:text-base flex flex-col gap-2">
             <div className="font-bold">
               Deploy
-              {project.deployURL ? (
-                <div>
-                  <Link
-                    target="_blank"
-                    className="font-medium text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
-                    href={project.deployURL}
-                  >
-                    {project.title}
-                  </Link>
-                </div>
+              {project.deployURL.length ? (
+                project.deployURL.map((url) => (
+                  <p key={url}>
+                    <Link
+                      target="_blank"
+                      className="font-medium text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
+                      href={url}
+                    >
+                      {url.replace("https://", "")}
+                    </Link>
+                  </p>
+                ))
               ) : (
                 <span className="flex items-center gap-2 font-medium">
                   Projeto em andamento
@@ -55,7 +57,7 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
             </div>
             <div className="font-bold">
               Repositório{project.repositories.length > 1 && "s"}
-              {project.repositories.length > 0 ? (
+              {project.repositories.length ? (
                 project.repositories.map((repository) => (
                   <p key={repository}>
                     <Link

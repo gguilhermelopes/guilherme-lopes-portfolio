@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  background: url("/bg.jpg") center center no-repeat fixed;
+  background: url("/bg2.jpg") center center no-repeat fixed;
   background-size: cover;
   color: #fff;
 }
@@ -39,7 +39,7 @@ html {
 }
 .embla__dots {
   z-index: 1;
-  bottom: 1.6rem;
+  bottom: -3.5rem;
   position: absolute;
   left: 0;
   right: 0;
@@ -49,17 +49,17 @@ html {
 }
 .embla__dot {
   width: 2.4rem;
-  height: 2.4rem;
+  height: 1.2rem;
   display: flex;
   align-items: center;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 .embla__dot:after {
-  background: #000;
+  background: #eee;
   border-radius: 0.2rem;
   width: 100%;
-  height: 0.4rem;
+  height: 0.2rem;
   content: "";
 }
 .embla__dot--selected:after {
@@ -71,7 +71,7 @@ html {
     flex: 0 0 80%;
   }
   .embla__dots {
-    bottom: 0.5rem;
+    bottom: -2.5rem;
   }
   .embla__dot {
     width: 1.6rem;
@@ -86,7 +86,7 @@ html {
     flex: 0 0 100%;
   }
   .embla__dots {
-    bottom: 0.25rem;
+    bottom: -1.5rem;
   }
   .embla__dot {
     width: 1.2rem;

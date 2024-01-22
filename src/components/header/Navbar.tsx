@@ -52,7 +52,7 @@ const Navbar = () => {
         {navContent.map((item) => (
           <li key={item.label}>
             <Link
-              className="font-semibold transition-all self-start hover:text-primary100"
+              className="font-bold transition-all self-start hover:text-primary100"
               href={item.href}
             >
               {item.label}
