@@ -28,11 +28,17 @@ const config: Config = {
         opacityIn: {
           to: { opacity: "initial", transform: "initial" },
         },
+        spin: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         "left-to-full": "leftToFull .3s forwards",
         "opacity-to-full": "opacityToFull .3s forwards",
         "opacity-in": "opacityIn .75s forwards",
+        "spin-loader": "spin 1s infinite",
       },
     },
   },
