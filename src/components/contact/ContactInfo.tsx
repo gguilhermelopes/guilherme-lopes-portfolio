@@ -4,8 +4,10 @@ import { MdWhatsapp, MdMailOutline } from "react-icons/md";
 const ContactInfo = () => {
   return (
     <section>
-      <div className="text-lg mt-8">
-        <h2 className="font-bold text-xl mb-2">Telefone e email</h2>
+      <div className="sm:text-lg mt-4 sm:mt-8">
+        <h2 className="font-bold text-base sm:text-xl sm:mb-2">
+          Telefone e email
+        </h2>
         <span className="flex items-center gap-3">
           <Link
             className="rounded-sm hover:bg-primary100 hover:text-black"
@@ -25,8 +27,8 @@ const ContactInfo = () => {
           <MdMailOutline />
         </span>
       </div>
-      <div className="text-lg mt-4">
-        <h2 className="font-bold text-xl mb-2">Localização</h2>
+      <div className="sm:text-lg mt-4">
+        <h2 className="font-bold text-base sm:text-xl sm:mb-2">Localização</h2>
         <p>Jundiaí, São Paulo, Brasil</p>
       </div>
     </section>

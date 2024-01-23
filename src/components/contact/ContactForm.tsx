@@ -38,7 +38,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(submitForm)}
-      className="flex flex-col gap-4 px-12 py-8 text-black"
+      className="flex flex-col mt-8 md:mt-0 gap-4 md:px-12 md:py-8 text-black"
     >
       <div className="flex-1 flex flex-col gap-1">
         <input
@@ -75,7 +75,7 @@ const ContactForm = () => {
       </div>
       <button
         disabled={isSubmitting}
-        className="flex items-center justify-center bg-primary100 rounded-md py-2 font-bold outline-primary100 disabled:bg-slate-400 disabled:cursor-not-allowed"
+        className="flex items-center justify-center bg-primary100 rounded-md py-2 font-bold outline-primary100 transition-all disabled:bg-slate-400 disabled:cursor-not-allowed hover:bg-primary100/90"
         type="submit"
       >
         {isSubmitting ? <Loader /> : "Enviar mensagem"}

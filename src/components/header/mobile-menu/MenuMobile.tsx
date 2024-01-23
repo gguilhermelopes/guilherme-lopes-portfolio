@@ -25,10 +25,10 @@ const MenuMobile = ({
 
   return (
     <div
-      className="fixed left-0 top-0 w-screen h-screen p-8 lg:hidden backdrop-blur-[2px]"
+      className="fixed left-0 top-0 w-screen h-screen p-8 lg:hidden backdrop-blur-[2px] z-10"
       onMouseDown={handleOutsideMouseDown}
     >
-      <nav className="mt-10 p-6 bg-background200 opacity-0 w-[200px] animate-opacity-to-full">
+      <nav className="mt-10 p-6 bg-background200 opacity-0 w-[200px] rounded-md animate-opacity-to-full">
         <ul className="flex flex-col gap-6">
           {navContent.map((item) => (
             <li

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  background: url("/bg2.jpg") center center no-repeat fixed;
+  background: url("/bg.jpg") center center no-repeat fixed;
   background-size: cover;
   color: #fff;
 }
