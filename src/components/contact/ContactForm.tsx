@@ -38,11 +38,11 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(submitForm)}
-      className="flex flex-col mt-8 md:mt-0 gap-4 md:px-12 md:py-8 text-black"
+      className="flex flex-col md:mt-8 gap-4 text-black"
     >
       <div className="flex-1 flex flex-col gap-1">
         <input
-          className="py-3 px-4 rounded-md outline-primary100 bg-gray-100"
+          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-gray-100"
           type="text"
           placeholder="Nome completo"
           {...register("name")}
@@ -53,7 +53,7 @@ const ContactForm = () => {
       </div>
       <div className="flex-1 flex flex-col gap-1">
         <input
-          className="py-3 px-4 rounded-md outline-primary100 bg-gray-100"
+          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-gray-100"
           type="text"
           placeholder="Email"
           {...register("email")}
@@ -64,7 +64,7 @@ const ContactForm = () => {
       </div>
       <div className="flex-1 flex flex-col gap-1">
         <textarea
-          className="py-3 px-4 rounded-md outline-primary100 bg-gray-100"
+          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-gray-100"
           placeholder="Mensagem"
           rows={6}
           {...register("message")}
