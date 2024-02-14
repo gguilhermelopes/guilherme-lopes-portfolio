@@ -13,7 +13,7 @@ const Presentation = () => {
       </h1>
       {pathname === "/main" && (
         <>
-          <p className="text-xs mt-4 font-semibold hidden md:block opacity-0 translate-x-10 animate-opacity-in">
+          <p className="text-xs text-gray-300/90 mt-4 font-semibold hidden md:block opacity-0 translate-x-10 animate-opacity-in">
             Desenvolvedor de software <TextDetails>full stack</TextDetails>,
             <br />
             crio interfaces interativas com <TextDetails>
@@ -26,7 +26,7 @@ const Presentation = () => {
             <br />
             procuro <TextDetails>desafios constantes</TextDetails>.
           </p>
-          <p className="text-[.625rem] leading-3 line mt-4 font-semibold md:hidden max-w-[250px] opacity-0 translate-x-10 animate-opacity-in">
+          <p className="text-[.625rem] text-gray-300/90 leading-3 line mt-4 font-semibold md:hidden max-w-[250px] opacity-0 translate-x-10 animate-opacity-in">
             Desenvolvedor de software{" "}
             <span className="text-primary100">full stack</span>, crio interfaces
             interativas com <TextDetails>React</TextDetails> e sistemas robustos

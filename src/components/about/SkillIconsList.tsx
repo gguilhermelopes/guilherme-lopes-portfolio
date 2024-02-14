@@ -11,15 +11,17 @@ type SkillIconsList = {
 const SkillIconsList = ({ skillsArray, title }: SkillIconsList) => {
   return (
     <div>
-      <h3 className="font-bold">{title}</h3>
+      <h3 className="font-bold text-gray-200">{title}</h3>
       <ul className="flex items-center gap-4 mt-2 flex-wrap">
         {skillsArray.map((skill) => (
           <li
-            className="flex flex-col gap-1 bg-background200 p-4 items-center rounded-md"
+            className="flex flex-col gap-3 bg-background200 p-4 items-center rounded-md"
             key={skill.label}
           >
             <span>{skill.icon}</span>
-            <span className="text-[8px] sm:text-xs">{skill.label}</span>
+            <span className="text-[8px] text-gray-300 font-medium sm:text-xs">
+              {skill.label}
+            </span>
           </li>
         ))}
       </ul>

@@ -8,7 +8,7 @@ const AboutPresentation = () => {
         Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
       </h1>
       <div className="sm:grid sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6">
-        <p className="max-w-[95%] self-center text-xs sm:text-sm md:text-base lg:text-lg">
+        <p className="max-w-[95%] text-gray-200 font-medium self-center text-xs sm:text-sm md:text-base lg:text-lg">
           Sou um <TextDetails>desenvolvedor</TextDetails> graduado em Engenharia
           Eletrônica e com experiência em projetos de desenvolvimento. Altamente
           dedicado à criação de soluções eficientes e escaláveis, bem como
@@ -35,7 +35,7 @@ const AboutPresentation = () => {
             processos deste mundo profissional.
           </span>
         </p>
-        <h2 className="uppercase font-extrabold hidden sm:block sm:text-6xl md:text-7xl text-white/30 text-right place-self-center">
+        <h2 className="uppercase font-extrabold hidden sm:block sm:text-6xl md:text-7xl text-white/20 text-right place-self-center">
           Quem <br /> sou <br />
           eu?
         </h2>

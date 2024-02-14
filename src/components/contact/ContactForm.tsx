@@ -42,40 +42,40 @@ const ContactForm = () => {
     >
       <div className="flex-1 flex flex-col gap-1">
         <input
-          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-gray-100"
+          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-yellow-50"
           type="text"
           placeholder="Nome completo"
           {...register("name")}
         />
         {errors.name?.message && (
-          <p className="text-xs text-red-500">{errors.name.message}</p>
+          <p className="text-xs text-red-400">{errors.name.message}</p>
         )}
       </div>
       <div className="flex-1 flex flex-col gap-1">
         <input
-          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-gray-100"
+          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-yellow-50"
           type="text"
           placeholder="Email"
           {...register("email")}
         />
         {errors.email?.message && (
-          <p className="text-xs text-red-500">{errors.email.message}</p>
+          <p className="text-xs text-red-400">{errors.email.message}</p>
         )}
       </div>
       <div className="flex-1 flex flex-col gap-1">
         <textarea
-          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-gray-100"
+          className="py-1 px-2 md:py-3 md:px-4 text-sm md:text-base rounded-md outline-primary100 bg-yellow-50"
           placeholder="Mensagem"
           rows={6}
           {...register("message")}
         />
         {errors.message?.message && (
-          <p className="text-xs text-red-500">{errors.message.message}</p>
+          <p className="text-xs text-red-400">{errors.message.message}</p>
         )}
       </div>
       <button
         disabled={isSubmitting}
-        className="flex items-center justify-center bg-primary100 rounded-md py-2 font-bold outline-primary100 transition-all disabled:bg-slate-400 disabled:cursor-not-allowed hover:bg-primary100/90"
+        className="flex items-center justify-center bg-primary100 rounded-md py-2 font-bold outline-primary100 transition-all disabled:bg-primary300 disabled:cursor-not-allowed hover:bg-primary100/90"
         type="submit"
       >
         {isSubmitting ? <Loader /> : "Enviar mensagem"}
