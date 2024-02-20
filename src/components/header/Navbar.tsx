@@ -52,23 +52,36 @@ const Navbar = () => {
         {navContent.map((item) => (
           <li key={item.label}>
             <Link
-              className="font-bold transition-all self-start hover:text-primary100"
+              className={`group relative transition-all self-start hover:text-primary100 ${
+                (item.href === pathname ||
+                  (pathname.startsWith(item.href) && item.href !== "/main")) &&
+                "text-primary100 font-bold"
+              }`}
               href={item.href}
             >
               {item.label}
               {(item.href === pathname ||
                 (pathname.startsWith(item.href) && item.href !== "/main")) && (
                 <span
-                  className="mt-1 w-0 h-[2px] block bg-primary100 animate-left-to-full"
+                  className="absolute -top-12 left-0 w-0 h-[2.5px] bg-primary100 animate-left-to-full group-hover:w-full"
                   aria-hidden
                 />
               )}
+              <span
+                className="absolute -top-12 left-0 w-0 h-[2.5px] bg-primary100  group-hover:w-full transition-all"
+                aria-hidden
+              />
             </Link>
           </li>
         ))}
       </ul>
       <>
-        <button className="flex lg:hidden" onClick={handleMenuToggleClick}>
+        <button
+          className="flex lg:hidden"
+          onClick={handleMenuToggleClick}
+          aria-label="Botão de menu"
+          type="button"
+        >
           <MenuIcon />
         </button>
         {isMenuMobileOpened && (

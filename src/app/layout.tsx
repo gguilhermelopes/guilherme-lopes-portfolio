@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Work_Sans({
+  subsets: ["latin-ext"],
+});
 
 export const metadata: Metadata = {
   title: "Guilherme Lopes 💻",

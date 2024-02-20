@@ -20,7 +20,7 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
           <h1 className="text-[1.375rem] sm:text-[1.75rem] font-bold text-primary100">
             {project.title}
           </h1>
-          <p className="text-xs sm:text-base text-gray-200 font-medium leading-4 sm:leading-normal">
+          <p className="text-xs sm:text-base text-gray-200 leading-4 sm:leading-normal">
             {project.longDescription}
           </p>
           <ul className="flex flex-wrap gap-2 text-black font-bold">

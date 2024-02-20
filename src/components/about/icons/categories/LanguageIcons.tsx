@@ -1,6 +1,7 @@
 import CSharp from "../CSharp";
 import Java from "../Java";
 import JavaScript from "../JavaScript";
+import PHPIcon from "../PHP";
 import TypeScript from "../TypeScript";
 
 export const languages = [
@@ -16,6 +17,11 @@ export const languages = [
     label: "TypeScript",
     icon: <TypeScript />,
   },
+  {
+    label: "PHP",
+    icon: <PHPIcon />,
+  },
+
   {
     label: "C#",
     icon: <CSharp />,

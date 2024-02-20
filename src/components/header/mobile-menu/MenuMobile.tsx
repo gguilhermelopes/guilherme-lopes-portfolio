@@ -32,7 +32,7 @@ const MenuMobile = ({
         <ul className="flex flex-col gap-6">
           {navContent.map((item) => (
             <li
-              className={`font-semibold ${
+              className={`font-normal ${
                 pathname === item.href && "text-primary100"
               }`}
               key={item.label}

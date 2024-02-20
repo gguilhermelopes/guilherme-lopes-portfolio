@@ -7,26 +7,29 @@ const AboutPresentation = () => {
         Olá! 👋 <br />
         Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
       </h1>
-      <div className="sm:grid sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6">
-        <p className="max-w-[95%] text-gray-200 font-medium self-center text-xs sm:text-sm md:text-base lg:text-lg">
-          Sou um <TextDetails>desenvolvedor</TextDetails> graduado em Engenharia
-          Eletrônica e com experiência em projetos de desenvolvimento. Altamente
-          dedicado à criação de soluções eficientes e escaláveis, bem como
-          interfaces funcionais. Sou especializado em tecnologias como{" "}
-          <TextDetails>Java</TextDetails>, <TextDetails>Spring</TextDetails>,{" "}
+      <div className="sm:grid sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6 ">
+        <p className="max-w-[85%] text-gray-200 self-center text-xs sm:text-sm md:text-base lg:text-lg lg:leading-5">
+          Sou um <TextDetails>desenvolvedor de software e web</TextDetails>{" "}
+          graduado em Engenharia Eletrônica e com experiência sólida em projetos
+          de desenvolvimento. Altamente dedicado à criação de soluções
+          eficientes e escaláveis, bem como interfaces funcionais. Especializado
+          em tecnologias como <TextDetails>Java</TextDetails>,{" "}
+          <TextDetails>Spring</TextDetails>,{" "}
           <TextDetails>JavaScript</TextDetails>,{" "}
           <TextDetails>TypeScript</TextDetails>,{" "}
           <TextDetails>React</TextDetails>, <TextDetails>Next</TextDetails>,{" "}
           <TextDetails>CSS</TextDetails>, <TextDetails>Tailwind</TextDetails> e
-          possuo habilidades práticas no consumo e criação de{" "}
+          com habilidades práticas no consumo e criação de{" "}
           <TextDetails>REST APIs</TextDetails>.
-          <span className="mt-1 block">
+          <span className="mt-4 block">
             Minha jornada na programação começou há quase{" "}
-            <TextDetails>dois anos</TextDetails>, quando decidi me aprofundar em{" "}
-            <TextDetails>JavaScript</TextDetails>. Desde então, houve uma grande{" "}
-            <TextDetails>evolução</TextDetails>, muito devido ao meu{" "}
-            <TextDetails>comprometimento</TextDetails> e{" "}
-            <TextDetails>facilidade de aprendizado</TextDetails>. Realizei{" "}
+            <TextDetails>dois anos</TextDetails>, quando decidi me aprofundar em
+            uma linguagem, o <TextDetails>JavaScript</TextDetails>. Desde então,
+            houve uma grande <TextDetails>evolução</TextDetails>, muito devido
+            ao meu <TextDetails>comprometimento</TextDetails> e{" "}
+            <TextDetails>facilidade de aprendizado</TextDetails>. Trabalhei com
+            muitas <TextDetails>linguagens</TextDetails> e{" "}
+            <TextDetails>ferramentas</TextDetails>, realizei{" "}
             <TextDetails>cursos</TextDetails>, desenvolvi projetos de forma{" "}
             <TextDetails>independente</TextDetails>, atuei como desenvolvedor{" "}
             <TextDetails>voluntário</TextDetails> e também como{" "}

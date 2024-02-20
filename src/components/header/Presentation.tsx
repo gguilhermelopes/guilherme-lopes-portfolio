@@ -6,7 +6,7 @@ const Presentation = () => {
   const pathname = usePathname();
   return (
     <div className="max-w-full lg:max-w-[380px] text-right">
-      <h1 className="font-extrabold leading-8 md:leading-none text-4xl md:text-5xl lg:text-6xl">
+      <h1 className="font-bold leading-8 md:leading-none text-4xl md:text-5xl lg:text-6xl">
         Software
         <br />
         <TextDetails>Dev</TextDetails>eloper

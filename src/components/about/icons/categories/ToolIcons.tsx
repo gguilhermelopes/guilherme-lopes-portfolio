@@ -29,6 +29,10 @@ export const tools = [
     icon: <Node />,
   },
   {
+    label: "Wordpress",
+    icon: <Wordpress />,
+  },
+  {
     label: "Docker",
     icon: <Docker />,
   },
@@ -53,10 +57,7 @@ export const tools = [
     label: "Prisma",
     icon: <Prisma />,
   },
-  {
-    label: "Wordpress",
-    icon: <Wordpress />,
-  },
+
   {
     label: "Linux",
     icon: <Linux />,
