@@ -52,7 +52,7 @@ const ImageSlides = ({ imageUrls }: ImageSlidesProps) => {
                 alt={url}
                 width={1280}
                 height={863}
-                loading="eager"
+                priority
               />
             </div>
           ))}

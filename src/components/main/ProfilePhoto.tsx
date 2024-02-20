@@ -10,6 +10,7 @@ const ProfilePhoto = () => {
         height={400}
         src="/index.jpg"
         alt="Guilherme Lopes"
+        priority
       />
     </>
   );
