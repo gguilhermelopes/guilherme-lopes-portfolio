@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 html {
+  background-color: black;
+}
+
+body {
   background: url("/bg.jpg") center center no-repeat fixed;
   background-size: cover;
   color: #fff;
