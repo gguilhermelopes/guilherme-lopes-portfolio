@@ -41,7 +41,7 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
                   <p key={url}>
                     <Link
                       target="_blank"
-                      className="font-medium text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
+                      className="font-medium break-words text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
                       href={url}
                     >
                       {url.replace("https://", "")}
@@ -62,7 +62,7 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
                   <p key={repository}>
                     <Link
                       target="_blank"
-                      className="font-medium text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
+                      className="font-medium break-words text-primary100 rounded-sm hover:bg-primary100 hover:text-black"
                       href={repository}
                     >
                       {repository.replace("https://", "")}

@@ -3,17 +3,17 @@ import TextDetails from "../UI/TextDetails";
 const AboutPresentation = () => {
   return (
     <>
-      <h1 className="font-bold text-lg sm:text-3xl md:text-4xl">
+      <h1 className="font-bold text-lg leading-5 sm:text-3xl sm:leading-7 md:text-4xl md:leading-9">
         Olá! 👋 <br />
         Me chamo <TextDetails>Guilherme Lopes</TextDetails>.
       </h1>
-      <div className="sm:grid sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6 ">
-        <p className="max-w-[85%] text-gray-200 self-center text-xs sm:text-sm md:text-base lg:text-lg lg:leading-5">
+      <div className="sm:grid text-pretty sm:grid-cols-[auto_280px] md:grid-cols-[auto_350px] mt-2 md:mt-6 ">
+        <p className="md:max-w-[80%] max-w-full text-gray-200 self-center text-xs sm:text-sm md:text-base lg:text-lg leading-3 sm:leading-4 lg:leading-5">
           Sou um <TextDetails>desenvolvedor de software e web</TextDetails>{" "}
           graduado em Engenharia Eletrônica e com experiência sólida em projetos
           de desenvolvimento. Altamente dedicado à criação de soluções
-          eficientes e escaláveis, bem como interfaces funcionais. Especializado
-          em tecnologias como <TextDetails>Java</TextDetails>,{" "}
+          eficientes, bem como interfaces funcionais. Especializado em
+          tecnologias como <TextDetails>Java</TextDetails>,{" "}
           <TextDetails>Spring</TextDetails>,{" "}
           <TextDetails>JavaScript</TextDetails>,{" "}
           <TextDetails>TypeScript</TextDetails>,{" "}
