@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat, Work_Sans } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 
-const montserrat = Work_Sans({
+const workSans = Work_Sans({
   subsets: ["latin-ext"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={montserrat.className}>
+      <body className={workSans.className}>
         <Toaster />
         {children}
       </body>
