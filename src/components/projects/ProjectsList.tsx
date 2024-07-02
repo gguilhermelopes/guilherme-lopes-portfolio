@@ -4,7 +4,7 @@ import prismadb from "../../../lib/prismadb";
 
 const fetchProjects = async () => {
   const projects = await prismadb.project.findMany({
-    orderBy: { createdAt: "asc" },
+    orderBy: { createdAt: "desc" },
   });
   return projects;
 };
