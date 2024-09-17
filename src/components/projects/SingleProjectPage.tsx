@@ -15,7 +15,7 @@ const SingleProjectPage = async ({ id }: { id: string }) => {
   if (!project) return null;
   return (
     <AnimateLeftIn>
-      <main className="mt-16">
+      <main className="mt-16 max-w-screen-xl mx-auto">
         <div className="flex flex-col gap-4">
           <h1 className="text-[1.375rem] sm:text-[1.75rem] font-bold text-primary100">
             {project.title}

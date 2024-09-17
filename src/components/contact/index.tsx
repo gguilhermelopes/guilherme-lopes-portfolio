@@ -6,7 +6,7 @@ import ContactInfo from "./ContactInfo";
 const ContactPage = () => {
   return (
     <AnimateLeftIn>
-      <main className="mt-8">
+      <main className="mt-8 max-w-screen-xl mx-auto">
         <h1 className="font-bold text-lg sm:text-3xl">
           Sinta se livre para entrar em <TextDetails>contato</TextDetails>! 📧
         </h1>

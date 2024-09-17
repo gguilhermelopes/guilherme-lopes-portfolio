@@ -6,7 +6,7 @@ import MyWorkLink from "./MyWorkLink";
 const AboutPage = () => {
   return (
     <AnimateLeftIn>
-      <main className="mt-8">
+      <main className="mt-8 max-w-screen-xl mx-auto">
         <AboutPresentation />
         <AboutSkillList />
         <MyWorkLink />
