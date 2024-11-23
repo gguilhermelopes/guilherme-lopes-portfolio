@@ -13,16 +13,15 @@ const AboutPresentation = () => {
           graduado em Engenharia Eletrônica e com experiência sólida em projetos
           de desenvolvimento. Altamente dedicado à criação de soluções
           eficientes, bem como interfaces funcionais. Especializado em
-          tecnologias como <TextDetails>Java</TextDetails>,{" "}
-          <TextDetails>Spring</TextDetails>,{" "}
-          <TextDetails>JavaScript</TextDetails>,{" "}
-          <TextDetails>TypeScript</TextDetails>,{" "}
+          tecnologias como <TextDetails>Python</TextDetails>,{" "}
+          <TextDetails>Java</TextDetails>, <TextDetails>JavaScript</TextDetails>
+          , <TextDetails>TypeScript</TextDetails>,{" "}
           <TextDetails>React</TextDetails>, <TextDetails>Next</TextDetails>,{" "}
           <TextDetails>CSS</TextDetails>, <TextDetails>Tailwind</TextDetails> e
           com habilidades práticas no consumo e criação de{" "}
           <TextDetails>REST APIs</TextDetails>.
           <span className="mt-4 block">
-            Minha jornada na programação começou há quase{" "}
+            Minha jornada na programação começou há mais de{" "}
             <TextDetails>dois anos</TextDetails>, quando decidi me aprofundar em
             uma linguagem, o <TextDetails>JavaScript</TextDetails>. Desde então,
             houve uma grande <TextDetails>evolução</TextDetails>, muito devido
@@ -32,9 +31,9 @@ const AboutPresentation = () => {
             <TextDetails>ferramentas</TextDetails>, realizei{" "}
             <TextDetails>cursos</TextDetails>, desenvolvi projetos de forma{" "}
             <TextDetails>independente</TextDetails>, atuei como desenvolvedor{" "}
-            <TextDetails>voluntário</TextDetails> e também como{" "}
-            <TextDetails>freelancer</TextDetails>, tudo com o objetivo de me{" "}
-            <TextDetails>capacitar</TextDetails> cada vez mais e entender os
+            <TextDetails>voluntário</TextDetails> e atualmente presto serviços
+            como <TextDetails>freelancer</TextDetails>, tudo com o objetivo de
+            me <TextDetails>capacitar</TextDetails> cada vez mais e entender os
             processos deste mundo profissional.
           </span>
         </p>

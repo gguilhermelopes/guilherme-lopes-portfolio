@@ -1,10 +1,14 @@
-import CSharp from "../CSharp";
+import Python from "../Python";
 import Java from "../Java";
 import JavaScript from "../JavaScript";
 import PHPIcon from "../PHP";
 import TypeScript from "../TypeScript";
 
 export const languages = [
+  {
+    label: "Python",
+    icon: <Python />,
+  },
   {
     label: "Java",
     icon: <Java />,
@@ -20,11 +24,6 @@ export const languages = [
   {
     label: "PHP",
     icon: <PHPIcon />,
-  },
-
-  {
-    label: "C#",
-    icon: <CSharp />,
   },
 ];
 
