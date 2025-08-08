@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import MenuIcon from "./mobile-menu/MenuIcon";
 import { useEffect, useState } from "react";
 import MenuMobile from "./mobile-menu/MenuMobile";
+import useBodyScrollLock from "@/hooks/useBodyScrollLock";
 
 export const navContent = [
   {
@@ -27,23 +28,21 @@ export const navContent = [
 const Navbar = () => {
   const [isMenuMobileOpened, setIsMenuMobileOpened] = useState(false);
   const pathname = usePathname();
+  const { lockScroll, unlockScroll } = useBodyScrollLock();
 
   useEffect(() => {
     setIsMenuMobileOpened(false);
-    toggleBodyScroll(true);
-  }, [pathname]);
-
-  const toggleBodyScroll = (shouldEnableScroll: boolean) => {
-    if (shouldEnableScroll) {
-      document.body.classList.remove("no-scroll");
-    } else {
-      document.body.classList.add("no-scroll");
-    }
-  };
+    unlockScroll();
+  }, [pathname, unlockScroll]);
 
   const handleMenuToggleClick = () => {
     setIsMenuMobileOpened(true);
-    toggleBodyScroll(false);
+    lockScroll();
+  };
+
+  const handleMenuClose = () => {
+    setIsMenuMobileOpened(false);
+    unlockScroll();
   };
 
   return (
@@ -84,12 +83,7 @@ const Navbar = () => {
         >
           <MenuIcon />
         </button>
-        {isMenuMobileOpened && (
-          <MenuMobile
-            setIsMenuMobileOpened={setIsMenuMobileOpened}
-            toggleBodyScroll={toggleBodyScroll}
-          />
-        )}
+        {isMenuMobileOpened && <MenuMobile onClose={handleMenuClose} />}
       </>
     </nav>
   );
