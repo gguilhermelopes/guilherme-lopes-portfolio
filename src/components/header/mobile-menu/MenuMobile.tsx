@@ -1,25 +1,20 @@
 "use client";
 
-import { Dispatch, MouseEvent, SetStateAction } from "react";
+import { MouseEvent } from "react";
 import { navContent } from "../Navbar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type MenuMobileProps = {
-  setIsMenuMobileOpened: Dispatch<SetStateAction<boolean>>;
-  toggleBodyScroll: (shouldEnableScroll: boolean) => void;
+  onClose: () => void;
 };
 
-const MenuMobile = ({
-  setIsMenuMobileOpened,
-  toggleBodyScroll,
-}: MenuMobileProps) => {
+const MenuMobile = ({ onClose }: MenuMobileProps) => {
   const pathname = usePathname();
 
   const handleOutsideMouseDown = (event: MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
-      setIsMenuMobileOpened(false);
-      toggleBodyScroll(true);
+      onClose();
     }
   };
 
@@ -37,7 +32,9 @@ const MenuMobile = ({
               }`}
               key={item.label}
             >
-              <Link href={item.href}>{item.label}</Link>
+              <Link href={item.href} onClick={onClose}>
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>
